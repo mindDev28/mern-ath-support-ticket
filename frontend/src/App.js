@@ -3,6 +3,7 @@ import { ToastContainer } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 import Header from './components/Header';
 import Admin from './pages/Admin';
+import Event from './pages/Event';
 
 import Events from './pages/Events';
 import Home from './pages/Home';
@@ -26,7 +27,7 @@ function App() {
             <Route path="/profile" element={<Profile />} />
 
             <Route path="/events" element={<Events />} />
-            <Route path="/single-class" element={<SingleClass />} />
+            <Route path="/events/:eventId" element={<Event />} />
 
             <Route path="/admin" element={<Admin />} />
             <Route path="/view-all-users" element={<VeiwAllUsers />} />

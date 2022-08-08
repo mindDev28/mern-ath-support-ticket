@@ -16,6 +16,8 @@ const { protect } = require('../middleware/authMiddleware');
 
 router.route('/').get(protect, getEvents).post(protect, createEvent);
 
+router.route('/:id').get(protect, getEvent);
+
 router
   .route('/:id')
   .get(protect, getEvent)
