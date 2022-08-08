@@ -1,5 +1,5 @@
 const mongoose = require('mongoose')
-const { boolean } = require('yargs')
+
 
 const userSchema = mongoose.Schema({
     name: {
